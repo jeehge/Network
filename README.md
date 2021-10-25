@@ -23,4 +23,10 @@ Alamofire는 iOS, macOS를 위한 스위프트 기반 HTTP 네트워킹 라이�
 Apple의 Foundation networking 기반으로 인터페이스를 제공하여 일반적인 네트워킹 작업을 쉽게 할 수 있다.
 
 
+<br>
+
+Apple의 Foundation networking 기반 
+
+이게 무엇일까 이것부터 시작해야겠다 👉 [링크](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Introduction/Introduction.html)
+
 

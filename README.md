@@ -57,3 +57,15 @@ Bonjour 👉 [링크](https://developer.apple.com/documentation/foundation/bonjo
 그럼 이제 내부적으로 내가 궁금했던 부분만 쏙쏙 뽑아서 예제로 함 봐야겠다
 
 다른 사람의 코드를 보는 것 만큼 좋은 공부가 없다고 하니 실천해보자!
+
+
+
+라이브러리 안쓰고 네트워킹 해보기
+
+URLSession Tutorial: Getting Started 👉 [링크](https://www.raywenderlich.com/3244963-urlsession-tutorial-getting-started)
+
+
+
+
+
+

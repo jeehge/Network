@@ -60,12 +60,14 @@ Bonjour 👉 [링크](https://developer.apple.com/documentation/foundation/bonjo
 
 
 
-라이브러리 안쓰고 네트워킹 해보기
+# raywenderlich
+
 
 URLSession Tutorial: Getting Started 👉 [링크](https://www.raywenderlich.com/3244963-urlsession-tutorial-getting-started)
 
+URLSession Tutorial에서는 `HTTP 요청을 만드는 방법`과 `일시 중지 및 재개`할 수 있는 방법을 공부할 수 있다.
 
-
+앱이 서버에서 응용 프로그램 데이터를 검색하거나, 상태를 업데이트하거나, 파일을 디스크에 다운로드 하거나 상관없이, 네트워크 요청이 가능하게 합니다. 
 
 
 

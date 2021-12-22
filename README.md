@@ -81,12 +81,12 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 
 `URLSession`은 요청을 보내고받는 핵심 객체이다. 
 
-세 가지 유형으로 제공되는 `URLSessionConfiguration`을 통해 생성한다.
+또한 `URLSessionConfiguration`을 통해 다음 세 가지 유형의 URL을 생성할 수 있다, 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionconfiguration)
 
+`default` 기본 세션 구성할 때 사용 (저장 객체 사용 -> 쿠키)
 
+`ephemeral` 캐시, 쿠키를 저장하지 않을 때 사용
 
-
-
-
+`background` 앱이 백그라운드에 있을 때 다운로드/업로드 할 때 사용. 앱 자체가 시스템에 의해 일시 중단되거나 종료된 경우에도 전송은 계속 됨
 
 

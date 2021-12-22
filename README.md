@@ -73,4 +73,20 @@ iTunes 검색 API를 사용하여 다음 노래의 30초 미리보기를 다운�
 백그라운드 이전을 지원하고 진행 중인 다운로드를 일시 중지, 다시 시작하거나 취소할 수 있습니다. 
 
 
+UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/urlsession)
+
+`UrlSession`은 HTTP 및 HTTPS 기반 요청을 처리하기 위한 클래스
+
+<img width="565" alt="스크린샷 2021-12-22 오후 4 31 10" src="https://user-images.githubusercontent.com/8108570/147053105-202f2fbe-61eb-4e7a-b8f4-c2e5c505064d.png">
+
+`URLSession`은 요청을 보내고받는 핵심 객체이다. 
+
+세 가지 유형으로 제공되는 `URLSessionConfiguration`을 통해 생성한다.
+
+
+
+
+
+
+
 

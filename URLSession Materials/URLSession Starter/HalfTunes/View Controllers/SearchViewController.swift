@@ -32,6 +32,7 @@ import UIKit
 
 //
 // MARK: - Search View Controller
+// SearchBarsearchButtonClicked는 상태 표시 줄의 네트워크 활동 표시기를 사용하여 네트워크 프로세스가 실행중인 사용자를 표시
 //
 class SearchViewController: UIViewController {
   //

@@ -104,7 +104,7 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 
 `URLSessionDataTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondatatask) 
 
-`URLSessionUploadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionuploadtask) 요청
+`URLSessionUploadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionuploadtask)
 
 `URLSessionDownloadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask)
 

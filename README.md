@@ -72,12 +72,11 @@ iTunes 검색 API를 사용하여 다음 노래의 30초 미리보기를 다운�
 
 백그라운드 이전을 지원하고 진행 중인 다운로드를 일시 중지, 다시 시작하거나 취소할 수 있습니다. 
 
+<br>
 
 UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/urlsession)
 
 `UrlSession`은 HTTP 및 HTTPS 기반 요청을 처리하기 위한 클래스
-
-<img width="565" alt="스크린샷 2021-12-22 오후 4 31 10" src="https://user-images.githubusercontent.com/8108570/147053105-202f2fbe-61eb-4e7a-b8f4-c2e5c505064d.png">
 
 `URLSession`은 요청을 보내고받는 핵심 객체이다. 
 
@@ -88,5 +87,28 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 `ephemeral` 캐시, 쿠키를 저장하지 않을 때 사용
 
 `background` 앱이 백그라운드에 있을 때 다운로드/업로드 할 때 사용. 앱 자체가 시스템에 의해 일시 중단되거나 종료된 경우에도 전송은 계속 됨
+
+<br>
+
+`URLSessionConfiguration`을 사용하면 시간 초과 값, 캐싱 정책 및 HTTP 헤더와 같은 세션 속성을 구성할 수도 있다. 
+
+`URLSessionTask`는 작업 개체를 나타내는 추상 클래스이다. 
+
+세션은 데이터를 가져오고 파일을 다운로드하거나 업로드하는 실제 작업을 수행하는 하나 이상의 task를 생성한다.
+
+<br>
+
+### Session Task Types
+
+구체적인 session task에는 세 가지 유형이 있다.
+
+`URLSessionDataTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondatatask) 
+
+`URLSessionUploadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionuploadtask) 요청
+
+`URLSessionDownloadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask)
+
+
+
 
 

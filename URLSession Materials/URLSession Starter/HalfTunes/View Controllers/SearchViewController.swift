@@ -121,7 +121,9 @@ extension SearchViewController: UISearchBarDelegate {
       UIApplication.shared.isNetworkActivityIndicatorVisible = false
       
       if let results = results {
+        // 검색 결과 저장
         self?.searchResults = results
+        // 테이블 뷰를 업데이트
         self?.tableView.reloadData()
         self?.tableView.setContentOffset(CGPoint.zero, animated: false)
       }

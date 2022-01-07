@@ -39,6 +39,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9B6060227883107006BEDFB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E9B606032788310E006BEDFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E9B606052788318F006BEDFB /* Extension */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E9B6060427883180006BEDFB /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E9B606052788318F006BEDFB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4E888272853960089ED10 /* Assets.xcassets */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E9B60606278831C7006BEDFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4E88A272853960089ED10 /* LaunchScreen.storyboard */,
+				E9F4E88D272853960089ED10 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E9B60607278831E7006BEDFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9F4E880272853950089ED10 /* ViewController.swift */,
+				E9F4E882272853950089ED10 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9B60608278831F1006BEDFB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E9B60609278831F9006BEDFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E9F4E870272853950089ED10 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +122,13 @@
 			children = (
 				E9F4E87C272853950089ED10 /* AppDelegate.swift */,
 				E9F4E87E272853950089ED10 /* SceneDelegate.swift */,
-				E9F4E880272853950089ED10 /* ViewController.swift */,
-				E9F4E882272853950089ED10 /* Main.storyboard */,
-				E9F4E888272853960089ED10 /* Assets.xcassets */,
-				E9F4E88A272853960089ED10 /* LaunchScreen.storyboard */,
-				E9F4E88D272853960089ED10 /* Info.plist */,
+				E9B6060227883107006BEDFB /* Common */,
+				E9B60607278831E7006BEDFB /* View */,
+				E9B60608278831F1006BEDFB /* ViewModel */,
+				E9B6060427883180006BEDFB /* API */,
+				E9B60609278831F9006BEDFB /* Model */,
+				E9B606032788310E006BEDFB /* Utils */,
+				E9B60606278831C7006BEDFB /* Supporting Files */,
 				E9F4E885272853950089ED10 /* NetworkStudy.xcdatamodeld */,
 			);
 			path = NetworkStudy;

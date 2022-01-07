@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060A278833A5006BEDFB /* UIView+Extension.swift */; };
+		E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060C27883421006BEDFB /* UITableViewCell+Extension.swift */; };
+		E9B6060F27883559006BEDFB /* CellIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060E27883559006BEDFB /* CellIdentifierable.swift */; };
+		E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */; };
+		E9B6061327883581006BEDFB /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061227883581006BEDFB /* StoryboardName.swift */; };
 		E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87C272853950089ED10 /* AppDelegate.swift */; };
 		E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87E272853950089ED10 /* SceneDelegate.swift */; };
 		E9F4E881272853950089ED10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9B6060A278833A5006BEDFB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E9B6060C27883421006BEDFB /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		E9B6060E27883559006BEDFB /* CellIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifierable.swift; sourceTree = "<group>"; };
+		E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryBoard.swift; sourceTree = "<group>"; };
+		E9B6061227883581006BEDFB /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
 		E9F4E879272853950089ED10 /* NetworkStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4E87C272853950089ED10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4E87E272853950089ED10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +52,9 @@
 		E9B6060227883107006BEDFB /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E9B6060E27883559006BEDFB /* CellIdentifierable.swift */,
+				E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */,
+				E9B6061227883581006BEDFB /* StoryboardName.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -64,7 +77,8 @@
 		E9B606052788318F006BEDFB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				E9F4E888272853960089ED10 /* Assets.xcassets */,
+				E9B6060A278833A5006BEDFB /* UIView+Extension.swift */,
+				E9B6060C27883421006BEDFB /* UITableViewCell+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -72,6 +86,7 @@
 		E9B60606278831C7006BEDFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E9F4E888272853960089ED10 /* Assets.xcassets */,
 				E9F4E88A272853960089ED10 /* LaunchScreen.storyboard */,
 				E9F4E88D272853960089ED10 /* Info.plist */,
 			);
@@ -206,8 +221,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F4E887272853950089ED10 /* NetworkStudy.xcdatamodeld in Sources */,
+				E9B6060F27883559006BEDFB /* CellIdentifierable.swift in Sources */,
+				E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */,
 				E9F4E881272853950089ED10 /* ViewController.swift in Sources */,
 				E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */,
+				E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */,
+				E9B6061327883581006BEDFB /* StoryboardName.swift in Sources */,
+				E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */,
 				E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

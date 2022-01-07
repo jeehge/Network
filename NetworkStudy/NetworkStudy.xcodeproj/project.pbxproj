@@ -12,6 +12,12 @@
 		E9B6060F27883559006BEDFB /* CellIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060E27883559006BEDFB /* CellIdentifierable.swift */; };
 		E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */; };
 		E9B6061327883581006BEDFB /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061227883581006BEDFB /* StoryboardName.swift */; };
+		E9B6061527883732006BEDFB /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061427883732006BEDFB /* GithubAPI.swift */; };
+		E9B6061727883794006BEDFB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061627883794006BEDFB /* API.swift */; };
+		E9B6061A278837EF006BEDFB /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B60619278837EF006BEDFB /* Issue.swift */; };
+		E9B6061C278837F6006BEDFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061B278837F6006BEDFB /* User.swift */; };
+		E9B6061E278837FE006BEDFB /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061D278837FE006BEDFB /* PullRequest.swift */; };
+		E9B6062027883804006BEDFB /* Reactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061F27883804006BEDFB /* Reactions.swift */; };
 		E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87C272853950089ED10 /* AppDelegate.swift */; };
 		E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87E272853950089ED10 /* SceneDelegate.swift */; };
 		E9F4E881272853950089ED10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* ViewController.swift */; };
@@ -27,6 +33,12 @@
 		E9B6060E27883559006BEDFB /* CellIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellIdentifierable.swift; sourceTree = "<group>"; };
 		E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryBoard.swift; sourceTree = "<group>"; };
 		E9B6061227883581006BEDFB /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		E9B6061427883732006BEDFB /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		E9B6061627883794006BEDFB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		E9B60619278837EF006BEDFB /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		E9B6061B278837F6006BEDFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E9B6061D278837FE006BEDFB /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		E9B6061F27883804006BEDFB /* Reactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactions.swift; sourceTree = "<group>"; };
 		E9F4E879272853950089ED10 /* NetworkStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4E87C272853950089ED10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4E87E272853950089ED10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +82,8 @@
 		E9B6060427883180006BEDFB /* API */ = {
 			isa = PBXGroup;
 			children = (
+				E9B6061627883794006BEDFB /* API.swift */,
+				E9B6061427883732006BEDFB /* GithubAPI.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -112,8 +126,20 @@
 		E9B60609278831F9006BEDFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E9B60618278837E4006BEDFB /* Github */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9B60618278837E4006BEDFB /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				E9B60619278837EF006BEDFB /* Issue.swift */,
+				E9B6061B278837F6006BEDFB /* User.swift */,
+				E9B6061D278837FE006BEDFB /* PullRequest.swift */,
+				E9B6061F27883804006BEDFB /* Reactions.swift */,
+			);
+			path = Github;
 			sourceTree = "<group>";
 		};
 		E9F4E870272853950089ED10 = {
@@ -220,15 +246,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B6061C278837F6006BEDFB /* User.swift in Sources */,
+				E9B6061727883794006BEDFB /* API.swift in Sources */,
+				E9B6061E278837FE006BEDFB /* PullRequest.swift in Sources */,
 				E9F4E887272853950089ED10 /* NetworkStudy.xcdatamodeld in Sources */,
 				E9B6060F27883559006BEDFB /* CellIdentifierable.swift in Sources */,
 				E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */,
 				E9F4E881272853950089ED10 /* ViewController.swift in Sources */,
+				E9B6061527883732006BEDFB /* GithubAPI.swift in Sources */,
+				E9B6062027883804006BEDFB /* Reactions.swift in Sources */,
 				E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */,
 				E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */,
 				E9B6061327883581006BEDFB /* StoryboardName.swift in Sources */,
 				E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */,
 				E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */,
+				E9B6061A278837EF006BEDFB /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

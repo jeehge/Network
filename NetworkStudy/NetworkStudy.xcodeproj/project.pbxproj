@@ -115,9 +115,9 @@
 		E9B60607278831E7006BEDFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E9613FFF27983BA100726FDB /* BaseViewController.swift */,
 				E9F4E880272853950089ED10 /* ViewController.swift */,
 				E9F4E882272853950089ED10 /* Main.storyboard */,
-				E9613FFF27983BA100726FDB /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

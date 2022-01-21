@@ -127,14 +127,9 @@ extension IssueListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let homepageUrl = list[indexPath.row].homepageUrl,
-                  let url = URL(string: homepageUrl) {
-            url.open()
-        } else {
-            let detailVC = IssueDetailViewController.viewController(from: .issueList)
-            detailVC.issue = list[indexPath.row]
-            navigationController?.pushViewController(detailVC, animated: true)
-        }
+//        let detailVC = IssueDetailViewController.viewController(from: .issueList)
+//        detailVC.issue = list[indexPath.row]
+//        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {

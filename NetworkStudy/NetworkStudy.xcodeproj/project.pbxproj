@@ -22,6 +22,7 @@
 		E9B6061C278837F6006BEDFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061B278837F6006BEDFB /* User.swift */; };
 		E9B6061E278837FE006BEDFB /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061D278837FE006BEDFB /* PullRequest.swift */; };
 		E9B6062027883804006BEDFB /* Reactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061F27883804006BEDFB /* Reactions.swift */; };
+		E9D892D0279A7D10002B05B1 /* IssueListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D892CF279A7D10002B05B1 /* IssueListCell.swift */; };
 		E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87C272853950089ED10 /* AppDelegate.swift */; };
 		E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87E272853950089ED10 /* SceneDelegate.swift */; };
 		E9F4E881272853950089ED10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		E9B6061B278837F6006BEDFB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E9B6061D278837FE006BEDFB /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
 		E9B6061F27883804006BEDFB /* Reactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reactions.swift; sourceTree = "<group>"; };
+		E9D892CF279A7D10002B05B1 /* IssueListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListCell.swift; sourceTree = "<group>"; };
 		E9F4E879272853950089ED10 /* NetworkStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4E87C272853950089ED10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4E87E272853950089ED10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		E9614003279A7ADA00726FDB /* Github */ = {
 			isa = PBXGroup;
 			children = (
+				E9D892CD279A7CFE002B05B1 /* Issue */,
 				E9614001279A7AD700726FDB /* IssueListViewController.swift */,
 			);
 			path = Github;
@@ -180,6 +183,22 @@
 			path = Github;
 			sourceTree = "<group>";
 		};
+		E9D892CD279A7CFE002B05B1 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				E9D892CE279A7D05002B05B1 /* Custom Cell */,
+			);
+			path = Issue;
+			sourceTree = "<group>";
+		};
+		E9D892CE279A7D05002B05B1 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E9D892CF279A7D10002B05B1 /* IssueListCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		E9F4E870272853950089ED10 = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +240,6 @@
 				92D391FC567E3707A9AE86B4 /* Pods-NetworkStudy.debug.xcconfig */,
 				A66630F4F135971FE740A28A /* Pods-NetworkStudy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -355,6 +373,7 @@
 				E9614002279A7AD700726FDB /* IssueListViewController.swift in Sources */,
 				E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */,
 				E9B6061327883581006BEDFB /* StoryboardName.swift in Sources */,
+				E9D892D0279A7D10002B05B1 /* IssueListCell.swift in Sources */,
 				E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */,
 				E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */,
 				E9B6061A278837EF006BEDFB /* Issue.swift in Sources */,

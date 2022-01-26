@@ -30,7 +30,7 @@
 		E9D892DF279CE68A002B05B1 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D892DE279CE68A002B05B1 /* ImageListViewController.swift */; };
 		E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87C272853950089ED10 /* AppDelegate.swift */; };
 		E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87E272853950089ED10 /* SceneDelegate.swift */; };
-		E9F4E881272853950089ED10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* ViewController.swift */; };
+		E9F4E881272853950089ED10 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* MenuViewController.swift */; };
 		E9F4E884272853950089ED10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F4E882272853950089ED10 /* Main.storyboard */; };
 		E9F4E887272853950089ED10 /* NetworkStudy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E885272853950089ED10 /* NetworkStudy.xcdatamodeld */; };
 		E9F4E889272853960089ED10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F4E888272853960089ED10 /* Assets.xcassets */; };
@@ -63,7 +63,7 @@
 		E9F4E879272853950089ED10 /* NetworkStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4E87C272853950089ED10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4E87E272853950089ED10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9F4E880272853950089ED10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9F4E880272853950089ED10 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		E9F4E883272853950089ED10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9F4E886272853950089ED10 /* NetworkStudy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NetworkStudy.xcdatamodel; sourceTree = "<group>"; };
 		E9F4E888272853960089ED10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 				E9D892DD279CE679002B05B1 /* Google */,
 				E9614004279A7AE400726FDB /* Base */,
 				E9614003279A7ADA00726FDB /* Github */,
-				E9F4E880272853950089ED10 /* ViewController.swift */,
+				E9F4E880272853950089ED10 /* MenuViewController.swift */,
 				E9F4E882272853950089ED10 /* Main.storyboard */,
 			);
 			path = View;
@@ -400,7 +400,7 @@
 				E9B6060F27883559006BEDFB /* CellIdentifierable.swift in Sources */,
 				E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */,
 				E961400027983BA100726FDB /* BaseViewController.swift in Sources */,
-				E9F4E881272853950089ED10 /* ViewController.swift in Sources */,
+				E9F4E881272853950089ED10 /* MenuViewController.swift in Sources */,
 				E9B6061527883732006BEDFB /* GithubAPI.swift in Sources */,
 				E9B6062027883804006BEDFB /* Reactions.swift in Sources */,
 				E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */,

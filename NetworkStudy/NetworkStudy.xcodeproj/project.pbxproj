@@ -10,6 +10,7 @@
 		16D2C1B34307D00E86E24EA4 /* Pods_NetworkStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDDC48F6A97DD22020D5ACA /* Pods_NetworkStudy.framework */; };
 		E961400027983BA100726FDB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9613FFF27983BA100726FDB /* BaseViewController.swift */; };
 		E9614002279A7AD700726FDB /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9614001279A7AD700726FDB /* IssueListViewController.swift */; };
+		E96FE8F227B15B0900356B38 /* MenuCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FE8F127B15B0900356B38 /* MenuCellType.swift */; };
 		E9772CCA2791A98C0085606D /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9772CC92791A98C0085606D /* GoogleAPI.swift */; };
 		E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060A278833A5006BEDFB /* UIView+Extension.swift */; };
 		E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060C27883421006BEDFB /* UITableViewCell+Extension.swift */; };
@@ -43,6 +44,7 @@
 		A66630F4F135971FE740A28A /* Pods-NetworkStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkStudy.release.xcconfig"; path = "Target Support Files/Pods-NetworkStudy/Pods-NetworkStudy.release.xcconfig"; sourceTree = "<group>"; };
 		E9613FFF27983BA100726FDB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9614001279A7AD700726FDB /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
+		E96FE8F127B15B0900356B38 /* MenuCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellType.swift; sourceTree = "<group>"; };
 		E9772CC92791A98C0085606D /* GoogleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
 		E9B6060A278833A5006BEDFB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E9B6060C27883421006BEDFB /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				E9B6060E27883559006BEDFB /* CellIdentifierable.swift */,
 				E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */,
 				E9B6061227883581006BEDFB /* StoryboardName.swift */,
+				E96FE8F127B15B0900356B38 /* MenuCellType.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				E9B6060D27883421006BEDFB /* UITableViewCell+Extension.swift in Sources */,
 				E961400027983BA100726FDB /* BaseViewController.swift in Sources */,
 				E9F4E881272853950089ED10 /* MenuViewController.swift in Sources */,
+				E96FE8F227B15B0900356B38 /* MenuCellType.swift in Sources */,
 				E9B6061527883732006BEDFB /* GithubAPI.swift in Sources */,
 				E9B6062027883804006BEDFB /* Reactions.swift in Sources */,
 				E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */,
@@ -599,7 +603,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -628,7 +632,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

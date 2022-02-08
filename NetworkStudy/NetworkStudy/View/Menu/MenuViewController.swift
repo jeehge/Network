@@ -9,6 +9,8 @@ import UIKit
 
 final class MenuViewController: BaseViewController {
 
+    typealias MenuType = (type: MenuCellType, count: Int)
+    
     // MARK: - UI
     
     private lazy var listTableView = UITableView().then {
@@ -16,6 +18,10 @@ final class MenuViewController: BaseViewController {
         $0.delegate = self
         $0.dataSource = self
 //        $0.register(IssueListCell.self)
+    }
+    
+    private var menuTypes: [MenuType] {
+        return []
     }
     
     // MARK: - Life Cycle
@@ -32,8 +38,8 @@ extension MenuViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: IssueListCell.identifier, for: indexPath) as! IssueListCell
-//        cell.setIssueListCell(by: list[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: MenuListCell.identifier, for: indexPath) as! MenuListCell
+        cell.setMenuCell(by: menuTypes[indexPath.row])
         return UITableViewCell()
     }
 }

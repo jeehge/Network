@@ -46,12 +46,11 @@ final class MenuListCell: UITableViewCell {
     }
     
     private func configIssueListCell() {
-        accessoryType = .disclosureIndicator
     }
     
     // MARK:- Setting
     
     func setMenuCell(by info: MenuType) {
-        
+        titleLabel.text = "1"
     }
 }

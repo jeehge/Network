@@ -112,7 +112,11 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 
 
 
-작업을 일시 중단,
+작업을 일시 중지 또는 다시 시작 및 취소할 수 있다.
+`URLSessionDownLoadTask`는 향후 재개를 위해 일시 중지할 수 있는 추가 기능이 있다.
+
+일반적으로 `URLSesseion`은 두 가지 방법으로 데이터를 반환한다.
+- 작업이 완료되면 완료 핸들러를 통해
 
 
 

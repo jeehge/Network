@@ -102,11 +102,11 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 
 구체적인 session task에는 세 가지 유형이 있다.
 
-`URLSessionDataTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondatatask) 서버로부터 데이터를 가져와서 메모리에 저장하는 GET 요청 대하 작업에 사용
+`URLSessionDataTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondatatask) : 서버로부터 데이터를 가져와서 메모리에 저장하는 GET 요청 대하 작업에 사용
 
-`URLSessionUploadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionuploadtask) POST 또는 PUT 메소드를 통해 디스크로 부터 웹 서비스로 파일으 업로드하는 작업에 사용
+`URLSessionUploadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessionuploadtask) : POST 또는 PUT 메소드를 통해 디스크로 부터 웹 서비스로 파일으 업로드하는 작업에 사용
 
-`URLSessionDownloadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask) 원격 서비스로부터 파일을 임시 파일 위치로 다운로드하는 작업에 사용
+`URLSessionDownloadTask` 👉 [링크](https://developer.apple.com/documentation/foundation/urlsessiondownloadtask) : 원격 서비스로부터 파일을 임시 파일 위치로 다운로드하는 작업에 사용
 
 <img width="624" alt="스크린샷 2022-02-12 오후 11 12 17" src="https://user-images.githubusercontent.com/8108570/153714754-8470f5b1-c552-45f2-8bb5-f115b838fd00.png">
 
@@ -116,10 +116,13 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 `URLSessionDownLoadTask`는 향후 재개를 위해 일시 중지할 수 있는 추가 기능이 있다.
 
 일반적으로 `URLSesseion`은 두 가지 방법으로 데이터를 반환한다.
-- 작업이 완료되면 완료 핸들러를 통해
 
+ - 작업이 성공적으로 끝나거나 에러가 발생할 때, 완료 핸들러를 통해
+ - 세션을 만들 때 설정한 delegate에 메서드의 호출을 통해
 
+<br>
 
+### DataTask 및 DownloadTask
 
 
 

@@ -124,6 +124,29 @@ UrlSession 👉 [링크](https://developer.apple.com/documentation/foundation/ur
 
 ### DataTask 및 DownloadTask
 
+사용자의 검색 조건을 위해 iTunes Search API에 쿼리하는 data task를 만듬으로써 시작한다.
+
+SearchViewController.swift에서 `searchBarsearchButtonClicked`는 스테이터스바의 네트워크 인디케이터를 사용해서, 네트워크 프로세서가 실행 중인 사용자르 표시한다. 그런 다음 네투워크 리퀘스트를 만들자 마자 QueryService.swift 안에서 처리하는 `getSearchResults(SearchTerm : Formultion :)`을 이후에 호출한다.
+
+그런 다음 에서 스텁된 를 호출한다. 네트워크 요청을 하기 위해 빌드한다.
+
+QueryService.swift에서 `// TODO 1`을 다음과 같이 바꾼다.
+
+```
+let defaultSession = URLSession(configuration: .default)
+```
+
+그리고 `// TODO 2` 
+
+```
+var dataTask: URLSessionDataTask?
+```
+
+
+
+
+
+
 
 
 

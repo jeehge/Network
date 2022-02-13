@@ -186,5 +186,28 @@ if var urlComponents = URLComponents(string: "https://itunes.apple.com/search") 
 }
 ```
 
+번호가 매겨진 각 주석의 내용과 같다.
 
+1. 새 사용자 쿼리의 경우, dataTask를 새로운 쿼리 재사용을 위해 이미 존재하는 모든 데이터 작업을 취소한다.
+2. query URL 안에 사용자의 검색 문자열을 포함하려면 검색 기본 URL에서 URLComponents를 만든 다음 query string을 설정한다. 이렇게 하면 검새 문자열에 이스케이프된 문자가 사용된다. 오류 메시지가 표시되면 이 [게시물](https://forums.raywenderlich.com/t/urlsession-tutorial-getting-started-raywenderlich-com/73741/13)을 참조! 
+3. urlComponents의 url 프로퍼티는 옵셔널이므로 안전하게 언래핑한다.
+4. 생성한 세션에서 URLSessionDataTask를 생성한다. 그리고 작업이 완료될 때 호출할 completion handler를 함께 전달한다.
+5. 요청이 성공하면 응답 데이터를 tracks 배열로 파싱하는 도우미 메서드 updateSearchResults를 호출한다.
+6. completion handler에게 tracks를 전달하기 위해 main queue로 전환한다.
+7. 모든 Task는 기본적으로 일시 중단된 상태로 시작된다. resume()을 호출해서 dataTask를 시작한다. 
+
+`SearchViewController`에서 `getSearchResults(searchTerm:completion:)` 호출의 completion closure를 살펴보자!
+
+네트워크 인디케이터를 숨긴 후 searchResults에 results를 저장한 다음 테이블 뷰를 업데이트한다.
+
+
+
+
+
+
+** 참고사이트
+
+이미 내가 공부 하려고 보고 있는 이 문서를 번역해 둔 착하 사람이 있다
+
+👉 [링크](https://o-o-wl.tistory.com/50)
 

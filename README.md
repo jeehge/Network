@@ -204,7 +204,6 @@ if var urlComponents = URLComponents(string: "https://itunes.apple.com/search") 
 
 
 
-
 ** 참고사이트
 
 이미 내가 공부 하려고 보고 있는 이 문서를 번역해 둔 착하 사람이 있다

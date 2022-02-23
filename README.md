@@ -211,8 +211,31 @@ Note. 기본 리퀘스트 메소드는 `GET`이다. 만약 `PUT, POST, DELETE`�
 음악을 저장하기 쉽게 `download task`를 사용할 것 이다.
 
 
+여러 개의 다운로드를 사용하기 위해 처음 해야할 일은 다운로드 활성 상태룰 유지하기 위한 사용자 정의 객체이다.
 
+새로운 Download.swift 파일을 Model 폴더에 생성한다.
 
+```
+class Download {
+  var isDownloading = false
+  var progress: Float = 0
+  var resumeData: Data?
+  var task: URLSessionDownloadTask?
+  var track: Track
+
+  init(track: Track) {
+    self.track = track
+  }
+}
+```
+
+`Download` 프로퍼티에 대한 설명은 다음과 같다.
+
+- isDownloading : 다운로드가 정지 중인지 진행 중인지 표현
+- progress: 0.0 ~ 1.0 사이의 다운로드 진행 상태르 보여주는 변수
+- resumeData : 사용자가 download task 를 중지했을 때, 지금까지 생성된 Data를 저장한다. 만야 호슽 서버가 지원한다면 중지된 다운로드를 재개할 수 있다.
+- task : 트랙을 다운로드 하는 URLSessionDownloadTask
+- track : 다운로드할 대사 트랙, 이 트랙으 URL은 Download 객체의 식별자이다.
 
 
 ** 참고사이트

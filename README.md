@@ -200,6 +200,17 @@ if var urlComponents = URLComponents(string: "https://itunes.apple.com/search") 
 
 네트워크 인디케이터를 숨긴 후 searchResults에 results를 저장한 다음 테이블 뷰를 업데이트한다.
 
+<br>
+
+Note. 기본 리퀘스트 메소드는 `GET`이다. 만약 `PUT, POST, DELETE`를 원한다면 `URLRequest.HTTPMethod` 프로퍼티를 설정하 다음 dataTask를 생성한다.
+
+<br>
+
+여기까지 작업 후 빌드하면 곡들의 검색 목록을 볼 수 있다. 그러나 download 하기 위해서 탭을 해도 아무 일도 일어나지 않는다.
+
+음악을 저장하기 쉽게 `download task`를 사용할 것 이다.
+
+
 
 
 

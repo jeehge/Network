@@ -29,11 +29,11 @@
 import Foundation
 
 class Download {
-  var isDownloading = false
-  var progress: Float = 0
-  var resumeData: Data?
-  var task: URLSessionDownloadTask?
-  var track: Track
+  var isDownloading = false     // 다운로드가 정지 중인지 진행 중인지 표현
+  var progress: Float = 0       // 0.0 ~ 1.0 사이의 다운로드 진행 상태르 보여주는 변수
+  var resumeData: Data?         // 사용자가 download task 를 중지했을 때, 지금까지 생성된 Data를 저장
+  var task: URLSessionDownloadTask? // 트랙을 다운로드 하는 URLSessionDownloadTask
+  var track: Track              // 다운로드할 대상 트랙, 이 트랙의 URL은 Download 객체의 식별자
   
   init(track: Track) {
     self.track = track

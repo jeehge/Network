@@ -75,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				55138328227DCE0D00A739ED /* Track.swift */,
+				E92B200527C6AA1500AF4ECA /* Download.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,7 +93,6 @@
 			children = (
 				5513832E227DD49300A739ED /* QueryService.swift */,
 				55138330227DD51800A739ED /* DownloadService.swift */,
-				E92B200527C6AA1500AF4ECA /* Download.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

@@ -46,11 +46,12 @@ final class MenuListCell: UITableViewCell {
     }
     
     private func configIssueListCell() {
+        
     }
     
-    // MARK:- Setting
+    // MARK:- config
     
     func setMenuCell(by info: MenuType) {
-        titleLabel.text = "1"
+        titleLabel.text = info.title
     }
 }

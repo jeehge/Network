@@ -7,7 +7,7 @@
 
 import UIKit
 
-typealias MenuType = (type: MenuCellType, count: Int)
+typealias MenuType = (type: MenuCellType, title: String)
 
 final class MenuViewController: BaseViewController {
     
@@ -21,8 +21,8 @@ final class MenuViewController: BaseViewController {
     }
     
     private var menuTypes: [MenuType] {
-        return [MenuType(type: .common, count: 0),
-                MenuType(type: .common, count: 0)]
+        return [MenuType(type: .common, title: "Google"),
+                MenuType(type: .common, title: "Github")]
     }
     
     // MARK: - Life Cycle

@@ -13,5 +13,5 @@ protocol CellTypeProtocol {
 }
 
 enum MenuCellType: CellTypeProtocol {
-  case common
+    case common
 }

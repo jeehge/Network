@@ -235,7 +235,7 @@ class Download {
 - progress: 0.0 ~ 1.0 사이의 다운로드 진행 상태르 보여주는 변수
 - resumeData : 사용자가 download task 를 중지했을 때, 지금까지 생성된 Data를 저장한다. 만야 호슽 서버가 지원한다면 중지된 다운로드를 재개할 수 있다.
 - task : 트랙을 다운로드 하는 URLSessionDownloadTask
-- track : 다운로드할 대사 트랙, 이 트랙으 URL은 Download 객체의 식별자이다.
+- track : 다운로드할 대상 트랙, 이 트랙으 URL은 Download 객체의 식별자이다.
 
 
 ** 참고사이트

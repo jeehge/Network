@@ -241,4 +241,11 @@ class Download {
 - task : 트랙을 다운로드 하는 URLSessionDownloadTask
 - track : 다운로드할 대상 트랙, 이 트랙의 URL은 Download 객체의 식별자이다.
 
+다음, DownloadService.swift 에서 // TODO 4 를 다음으로 바꾼다.
+
+```
+var activeDownloads: [URL: Download] = [:]
+```
+
+이 딕셔너리는 URL과 진행중인 Download를 매핑한다.
 

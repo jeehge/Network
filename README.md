@@ -210,6 +210,10 @@ Note. 기본 리퀘스트 메소드는 `GET`이다. 만약 `PUT, POST, DELETE`�
 
 음악을 저장하기 쉽게 `download task`를 사용할 것 이다.
 
+** 참고사이트
+
+이미 내가 공부 하려고 보고 있는 이 문서를 번역해 둔 착한 사람이 있다 👉 [링크](https://o-o-wl.tistory.com/50)
+
 
 여러 개의 다운로드를 사용하기 위해 처음 해야할 일은 다운로드 활성 상태룰 유지하기 위한 사용자 정의 객체이다.
 
@@ -237,10 +241,4 @@ class Download {
 - task : 트랙을 다운로드 하는 URLSessionDownloadTask
 - track : 다운로드할 대상 트랙, 이 트랙의 URL은 Download 객체의 식별자이다.
 
-
-** 참고사이트
-
-이미 내가 공부 하려고 보고 있는 이 문서를 번역해 둔 착하 사람이 있다
-
-👉 [링크](https://o-o-wl.tistory.com/50)
 

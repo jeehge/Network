@@ -38,7 +38,7 @@ class DownloadService {
   //
   // MARK: - Variables And Properties
   //
-  // TODO 4
+  var activeDownloads: [URL: Download] = [:] // URL과 Download를 매핑
   
   /// SearchViewController creates downloadsSession
   var downloadsSession: URLSession!

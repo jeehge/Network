@@ -251,11 +251,23 @@ var activeDownloads: [URL: Download] = [:]
 
 우리는 data task르 생성한 것처럼, download task 를 completion handler 와 함께 생성할 수 있다. 튜토리얼 뒷부분에서 다운로드 진행 상태를 업데이트하고 검사하 것이다. 그러므로 우리는 사용자 정의 델리게이트가 필요하다.
 
-몇몇 session delegate에 관련된 프로토콜이 있다.
 
-`URLSessionDownloadDelegate`는 download task 에 대한 이벤트르 처리한다.
+
+Apple의 URLSession 문서에 나열된 여러 session delegate 프로토콜이 있다. `URLSessionDownloadDelegate`는 download task 에 대한 이벤트르 처리한다.
 
 우리는 `SearchViewController` 를 session delegate 로 설정할 필요가 있습니다. 그래서 지금 우리는 session delegate 프로토콜을 확장할 것이다.
 
+SearchViewController.swift 에 아래오 같이 확장하자!
+
+```
+extension SearchViewController: URLSessionDownloadDelegate {
+  func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask,
+                  didFinishDownloadingTo location: URL) {
+    print("Finished downloading to \(location).")
+  } 
+}
+```
+
+`URLSessionDownloadDelegate` 메소드는 다운로드가 끝났을 때 알리는 `urlSession(_:downloadTask:didFinishDownloadingTo:)` 메소드 단 하나만이 required 구혀 메소드이다.
 
 

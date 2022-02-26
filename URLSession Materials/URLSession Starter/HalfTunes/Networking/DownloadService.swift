@@ -58,7 +58,16 @@ class DownloadService {
   func resumeDownload(_ track: Track) {
   }
   
-  // TODO 8
   func startDownload(_ track: Track) {
+    // 1. 트랙으로 Download를 초기화
+    let download = Download(track: track)
+    // 2. 트랙의 미리보기 URL을 사용하여 URLSessionDownloadTask를 만들고 다운롣의 작업 속성을 설정
+    download.task = downloadsSession.downloadTask(with: track.previewURL)
+    // 3. 다운로드 작업 시작
+    download.task?.resume()
+    // 4. 다운로드가 진행 중임을 체크
+    download.isDownloading = true
+    // 5. URL을 ActiveDownload에 맵핑
+    activeDownloads[download.track.previewURL] = download
   }
 }

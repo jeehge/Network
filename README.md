@@ -328,3 +328,13 @@ activeDownloads[download.track.previewURL] = download
 4. download가 진행 중임을 나타낸다.
 5. 마지막으로, download URL을 `activeDlownloads`에서 `Download`에 매핑한다.
 
+
+앱을 빌드 후 실행하고, 트랙을 검색하고, cell 에서 Download 버튼을 누른다. 잠시 후 다운로드가 완료되었음을 나타내는 디버그 콘솔에 메시지가 표시된다.
+
+```
+Finished downloading to file:///Users/mymac/Library/Developer/CoreSimulator/Devices/74A1CE9B-7C49-46CA-9390-3B8198594088/data/Containers/Data/Application/FF0D263D-4F1D-4305-B98B-85B6F0ECFE16/tmp/CFNetworkDownload_BsbzIk.tmp.
+```
+
+다운로드 버튼이 계속 표시되지만 곧 해결할 수 있다.
+
+

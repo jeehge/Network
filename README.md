@@ -328,4 +328,3 @@ activeDownloads[download.track.previewURL] = download
 4. download가 진행 중임을 나타낸다.
 5. 마지막으로, download URL을 `activeDlownloads`에서 `Download`에 매핑한다.
 
-

@@ -54,7 +54,13 @@ class SearchViewController: UIViewController {
   //
   // MARK: - Variables And Properties
   //
-  // TODO 6
+  lazy var downloadsSession: URLSession = {
+    let configuration = URLSessionConfiguration.default
+    
+    return URLSession(configuration: configuration,
+                      delegate: self,
+                      delegateQueue: nil)
+  }()
   
   var searchResults: [Track] = []
   
@@ -99,7 +105,8 @@ class SearchViewController: UIViewController {
     super.viewDidLoad()
     tableView.tableFooterView = UIView()
     
-    // TODO 7
+    // DownloadService의 downloadsSession 속성이 방금 정의한 세션으로 설정
+    downloadService.downloadsSession = downloadsSession
   }
   
 }
@@ -225,4 +232,11 @@ extension SearchViewController: TrackCellDelegate {
 
 // TODO 19
 
-// TODO 5
+// MARK: - URLSessionDownLoadDelegate
+extension SearchViewController: URLSessionDownloadDelegate {
+  // 앱 다운로드가 끝나면 앱이 호출
+  func urlSession(_ session: URLSession, downloadTask: URLSessionDownloadTask,
+                  didFinishDownloadingTo location: URL) {
+    print("Finished downloading to \(location).")
+  }
+}

@@ -270,4 +270,53 @@ extension SearchViewController: URLSessionDownloadDelegate {
 
 `URLSessionDownloadDelegate` 메소드는 다운로드가 끝났을 때 알리는 `urlSession(_:downloadTask:didFinishDownloadingTo:)` 메소드 단 하나만이 required 구혀 메소드이다.
 
+모든 준비 작업을 완료했다.
+
+이제 파일 다운로드를 할 수 있다.
+
+
+download task 를 다루는 session 을 만든다.
+
+```
+lazy var downloadsSession: URLSession = {
+  let configuration = URLSessionConfiguration.default
+  
+  return URLSession(configuration: configuration, 
+                    delegate: self, 
+                    delegateQueue: nil)
+}()
+```
+
+여기에서, 기본 구성으로 별도의 session을 초기화하고 delegate 호출을 통해 URLSession 이벤를 수신할 수 있도록 지정했다.
+
+이것은 progress의 task 진행 사항을 모니터링 하기에 유용하다.
+
+delegateQueue를 nil로 설정하면 serial operation queue 를 만들어서 completion handler와 delegate 메소드를 모두 수행한다. 
+
+다음 코드를 // TODO 7 에 넣는다.
+
+```
+downloadService.downloadsSession = downloadsSession
+```
+
+이렇게하면 `DownloadService` 의 `downloadsSession` 프로퍼티가 방금 정의한 session에 설정된다.
+
+delegate 와 session 으로 구성되 상태에서 사용자가 트랙 다운로드를 요청할 때 마침내 download task 를 만들 준비가 되었다.
+
+DownloadService.swift 에서 다으 구현으로 startDownload(_ :)의 내용을 바꾼다.
+
+```
+// 1
+let download = Download(track: track)
+// 2
+download.task = downloadsSession.downloadTask(with: track.previewURL)
+// 3
+download.task?.resume()
+// 4
+download.isDownloading = true
+// 5
+activeDownloads[download.track.previewURL] = download
+```
+
+
 

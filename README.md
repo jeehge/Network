@@ -318,5 +318,14 @@ download.isDownloading = true
 activeDownloads[download.track.previewURL] = download
 ```
 
+사용자가 table view cell의 다운로드 버튼을 탭하면, `TrackCellDelegate` 로 동작하는 `SearchViewController`가 cell의 `Track`을 식별한 다음 해당 `Track`에 대한 `startDownload(_ :)`를 실행한다.
+
+`startDownload(_ :)` 에서 무슨 일이 일어나는지 보자!
+
+1. Track 으로 Download 객체를 초기화한다.
+2. 새 session 객체를 사용하여, Track의 preview URL로`URLSessionDownloadTask`를 만들고, download의 task 프로퍼티로 설정한다.
+3. `resume()` 호출하여 download task 시작한다.
+4. download가 진행 중임을 나타낸다.
+5. 마지막으로, download URL을 `activeDlownloads`에서 `Download`에 매핑한다.
 
 

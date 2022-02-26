@@ -338,3 +338,10 @@ Finished downloading to file:///Users/mymac/Library/Developer/CoreSimulator/Devi
 다운로드 버튼이 계속 표시되지만 곧 해결할 수 있다.
 
 
+download task 가 완료되면 `urlSession(_ :downloadTask:didFinsihDownloadingTo:)` 메소드는 URL 임시 파일 영역에 저장한다.
+
+task 는 메서드가 리턴되기 전에 앱 샌드박스 컨테이너 디렉터리 영역의 위치로 이동하는 것이다.
+
+
+
+

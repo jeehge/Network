@@ -343,5 +343,42 @@ download task 가 완료되면 `urlSession(_ :downloadTask:didFinsihDownloadingT
 task 는 메서드가 리턴되기 전에 앱 샌드박스 컨테이너 디렉터리 영역의 위치로 이동하는 것이다.
 
 
+ShearchViewController.swift에서 `urlSession(_ :downloadTask:didFinsihDownloadingTo:)`의 print 문을 다음 코드로 바꾼다.
+
+```
+// 1
+guard let sourceURL = downloadTask.originalRequest?.url else {
+  return
+}
+
+let download = downloadService.activeDownloads[sourceURL]
+downloadService.activeDownloads[sourceURL] = nil
+// 2
+let destinationURL = localFilePath(for: sourceURL)
+print(destinationURL)
+// 3
+let fileManager = FileManager.default
+try? fileManager.removeItem(at: destinationURL)
+
+do {
+  try fileManager.copyItem(at: location, to: destinationURL)
+  download?.track.downloaded = true
+} catch let error {
+  print("Could not copy file to disk: \(error.localizedDescription)")
+}
+// 4
+if let index = download?.track.index {
+  DispatchQueue.main.async { [weak self] in
+    self?.tableView.reloadRows(at: [IndexPath(row: index, section: 0)], 
+                               with: .none)
+  }
+}
+```
+
+각 단계에서 수행하는 작업은 다음과 같다.
+
+Here’s what you’re doing at each step:
+
+
 
 

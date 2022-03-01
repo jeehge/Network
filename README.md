@@ -377,8 +377,11 @@ if let index = download?.track.index {
 
 각 단계에서 수행하는 작업은 다음과 같다.
 
-Here’s what you’re doing at each step:
+1. Task 로 부터 original request URL을 추출하고, active downloads에서 일치하는 `Download`를 조회하고 해당 dictionary 에서 제거한다.
+2. 그런 다음 URL(파일 이름 및 파일의 확장자)을 lastPathComponent를 앱의 Documents directory의 경로에 추가해서 영구적으로 저장할 로컬 파일 경로를 생성하는 영구적인 로커 파일 경로를 생성하는 `localFilePath(for:)` 메소드의 파라미터로 URL을 전달한다.
+3. `fileManager`를 사용하면 다운로드 한 파일을 임시 파일 위치에서 원하는 파이 경로로 이동 시킨다. 먼저 복사 작업을 시작하기 전에 해다 위치에서 아이템을 지운다. 그리고 트랙의 `download` 프로퍼티를 true로 설정한다.
+4. 마지막으로 download track의 index 프로퍼티와 일치하는 cell을 reload 한다.
 
 
 
-
+Build and run your project, run a query, then pick any track and download it. When the download has finished, you’ll see the file path location printed to your console:

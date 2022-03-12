@@ -66,4 +66,16 @@ extension MenuViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch menuTypes[indexPath.row].title {
+        case "Google":
+            let imageListVC = ImageListViewController.viewController(from: .main)
+            navigationController?.pushViewController(imageListVC, animated: true)
+        case "Github":
+            let issueListVC = IssueListViewController.viewController(from: .main)
+//            navigationController?.pushViewController(issueListVC, animated: true)
+        default:
+            break
+        }
+    }
 }

@@ -12,4 +12,8 @@ import Foundation
  */
 final class ImageListViewController: BaseViewController {
     
+    // MARK: - Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

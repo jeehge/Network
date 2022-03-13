@@ -13,6 +13,8 @@
 		E9614002279A7AD700726FDB /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9614001279A7AD700726FDB /* IssueListViewController.swift */; };
 		E96FE8F227B15B0900356B38 /* MenuCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96FE8F127B15B0900356B38 /* MenuCellType.swift */; };
 		E9772CCA2791A98C0085606D /* GoogleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9772CC92791A98C0085606D /* GoogleAPI.swift */; };
+		E9A7142327DD77990062A6C7 /* Google.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A7142227DD77990062A6C7 /* Google.storyboard */; };
+		E9A7142627DD77AC0062A6C7 /* Github.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A7142527DD77AC0062A6C7 /* Github.storyboard */; };
 		E9B6060B278833A5006BEDFB /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060A278833A5006BEDFB /* UIView+Extension.swift */; };
 		E9B6060F27883559006BEDFB /* ReuseViewIdentifierable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6060E27883559006BEDFB /* ReuseViewIdentifierable.swift */; };
 		E9B6061127883577006BEDFB /* ViewControllerFromStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */; };
@@ -47,6 +49,8 @@
 		E9614001279A7AD700726FDB /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
 		E96FE8F127B15B0900356B38 /* MenuCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCellType.swift; sourceTree = "<group>"; };
 		E9772CC92791A98C0085606D /* GoogleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAPI.swift; sourceTree = "<group>"; };
+		E9A7142227DD77990062A6C7 /* Google.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Google.storyboard; sourceTree = "<group>"; };
+		E9A7142527DD77AC0062A6C7 /* Github.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Github.storyboard; sourceTree = "<group>"; };
 		E9B6060A278833A5006BEDFB /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E9B6060E27883559006BEDFB /* ReuseViewIdentifierable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseViewIdentifierable.swift; sourceTree = "<group>"; };
 		E9B6061027883577006BEDFB /* ViewControllerFromStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFromStoryBoard.swift; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 			children = (
 				E9D892CD279A7CFE002B05B1 /* Issue */,
 				E9614001279A7AD700726FDB /* IssueListViewController.swift */,
+				E9A7142527DD77AC0062A6C7 /* Github.storyboard */,
 			);
 			path = Github;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D892DE279CE68A002B05B1 /* ImageListViewController.swift */,
+				E9A7142227DD77990062A6C7 /* Google.storyboard */,
 			);
 			path = Google;
 			sourceTree = "<group>";
@@ -357,7 +363,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9F4E88C272853960089ED10 /* LaunchScreen.storyboard in Resources */,
+				E9A7142327DD77990062A6C7 /* Google.storyboard in Resources */,
 				E9F4E889272853960089ED10 /* Assets.xcassets in Resources */,
+				E9A7142627DD77AC0062A6C7 /* Github.storyboard in Resources */,
 				E9F4E884272853950089ED10 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

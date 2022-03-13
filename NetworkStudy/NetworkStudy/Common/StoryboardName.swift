@@ -7,4 +7,6 @@
 
 enum StoryboardName: String {
     case main = "Main"
+    case google = "Google"
+    case github = "Github"
 }

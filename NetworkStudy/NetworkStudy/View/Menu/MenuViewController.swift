@@ -69,10 +69,10 @@ extension MenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch menuTypes[indexPath.row].title {
         case "Google":
-            let imageListVC = ImageListViewController.viewController(from: .main)
+            let imageListVC = ImageListViewController.viewController(from: .google)
             navigationController?.pushViewController(imageListVC, animated: true)
         case "Github":
-            let issueListVC = IssueListViewController.viewController(from: .main)
+            let issueListVC = IssueListViewController.viewController(from: .github)
 //            navigationController?.pushViewController(issueListVC, animated: true)
         default:
             break

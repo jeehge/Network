@@ -73,7 +73,7 @@ extension MenuViewController: UITableViewDelegate {
             navigationController?.pushViewController(imageListVC, animated: true)
         case "Github":
             let issueListVC = IssueListViewController.viewController(from: .github)
-//            navigationController?.pushViewController(issueListVC, animated: true)
+            navigationController?.pushViewController(issueListVC, animated: true)
         default:
             break
         }

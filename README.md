@@ -382,6 +382,9 @@ if let index = download?.track.index {
 3. `fileManager`를 사용하면 다운로드 한 파일을 임시 파일 위치에서 원하는 파이 경로로 이동 시킨다. 먼저 복사 작업을 시작하기 전에 해다 위치에서 아이템을 지운다. 그리고 트랙의 `download` 프로퍼티를 true로 설정한다.
 4. 마지막으로 download track의 index 프로퍼티와 일치하는 cell을 reload 한다.
 
+프로젝트를 빌드하고 실행시켜 보자!
 
+트랙을 다운로드하면 다운로드가 끝났을 때 우리는 파일의 위치를 볼 수 있다.
 
-Build and run your project, run a query, then pick any track and download it. When the download has finished, you’ll see the file path location printed to your console:
+다운로드
+

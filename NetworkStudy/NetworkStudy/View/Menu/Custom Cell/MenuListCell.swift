@@ -40,16 +40,13 @@ final class MenuListCell: UITableViewCell {
         
         titleLabel.snp.makeConstraints {
             $0.top.bottom.equalTo(safeAreaLayoutGuide).inset(8)
-            $0.left.equalTo(safeAreaLayoutGuide).inset(16)
-            $0.right.equalTo(safeAreaLayoutGuide).inset(32)
+			$0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(16)
         }
     }
     
     private func configIssueListCell() {
         
     }
-    
-    // MARK:- config
     
     func setMenuCell(by info: MenuType) {
         titleLabel.text = info.title

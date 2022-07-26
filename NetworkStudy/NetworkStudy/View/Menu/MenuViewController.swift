@@ -14,10 +14,12 @@ final class MenuViewController: BaseViewController {
     // MARK: - UI
     
     private lazy var listTableView = UITableView().then {
-        $0.translatesAutoresizingMaskIntoConstraints = false
+		$0.register(MenuListCell.self)
         $0.delegate = self
         $0.dataSource = self
-        $0.register(MenuListCell.self)
+		$0.rowHeight = UITableView.automaticDimension
+		$0.estimatedRowHeight = 44.0
+		
     }
     
     private var menuTypes: [MenuType] {
@@ -65,7 +67,6 @@ extension MenuViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension MenuViewController: UITableViewDelegate {
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch menuTypes[indexPath.row].title {
         case "Google":

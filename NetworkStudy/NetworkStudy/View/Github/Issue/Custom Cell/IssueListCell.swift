@@ -13,12 +13,10 @@ final class IssueListCell: UITableViewCell {
     // MARK: - UI
     
     private let titleLabel = UILabel().then {
-        $0.translatesAutoresizingMaskIntoConstraints = false
         $0.font = .systemFont(ofSize: 16)
     }
     
     private let logoImageView = UIImageView().then {
-        $0.translatesAutoresizingMaskIntoConstraints = false
         $0.contentMode = .scaleAspectFit
         $0.isHidden = true
     }
@@ -48,8 +46,7 @@ final class IssueListCell: UITableViewCell {
         
         titleLabel.snp.makeConstraints {
             $0.top.bottom.equalTo(safeAreaLayoutGuide).inset(8)
-            $0.left.equalTo(safeAreaLayoutGuide).inset(16)
-            $0.right.equalTo(safeAreaLayoutGuide).inset(32)
+			$0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(16)
         }
         
         logoImageView.snp.makeConstraints {

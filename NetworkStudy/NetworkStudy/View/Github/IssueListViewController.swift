@@ -33,9 +33,10 @@ final class IssueListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getIssues()
         configConstraint()
         configNavigationBar()
+		
+		getIssues()
     }
     
     // MARK: - Config
@@ -58,7 +59,7 @@ final class IssueListViewController: BaseViewController {
             guard let self = self else { return }
             switch result {
             case .success(let result):
-                var list: [Issue] = result
+                let list: [Issue] = result
                 self.list = list
                 
                 DispatchQueue.main.async {
@@ -67,15 +68,15 @@ final class IssueListViewController: BaseViewController {
                 }
             case .failure(let error):
                 print(error)
-                let alertController = UIAlertController(title: "Error", message: "Repo Error", preferredStyle: .alert)
-                let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-                    let repo = self.repoTitle.components(separatedBy: "/")
-                    self.getIssues(owner: owner, repo: repo[1])
-                }
-                alertController.addAction(okAction)
-                DispatchQueue.main.async {
-                    self.present(alertController, animated: true, completion: nil)
-                }
+//                let alertController = UIAlertController(title: "Error", message: "Repo Error", preferredStyle: .alert)
+//                let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+//                    let repo = self.repoTitle.components(separatedBy: "/")
+//                    self.getIssues(owner: owner, repo: repo[1])
+//                }
+//                alertController.addAction(okAction)
+//                DispatchQueue.main.async {
+//                    self.present(alertController, animated: true, completion: nil)
+//                }
             }
         }
     }

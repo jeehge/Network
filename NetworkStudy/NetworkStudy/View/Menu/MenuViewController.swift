@@ -19,7 +19,6 @@ final class MenuViewController: BaseViewController {
         $0.dataSource = self
 		$0.rowHeight = UITableView.automaticDimension
 		$0.estimatedRowHeight = 44.0
-		
     }
     
     private var menuTypes: [MenuType] {

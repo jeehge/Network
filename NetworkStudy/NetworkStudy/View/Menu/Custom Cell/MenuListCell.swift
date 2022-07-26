@@ -39,8 +39,7 @@ final class MenuListCell: UITableViewCell {
         contentView.addSubviews(titleLabel)
         
         titleLabel.snp.makeConstraints {
-            $0.top.bottom.equalTo(safeAreaLayoutGuide).inset(8)
-			$0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(16)
+			$0.top.bottom.leading.equalToSuperview().inset(16)
         }
     }
     

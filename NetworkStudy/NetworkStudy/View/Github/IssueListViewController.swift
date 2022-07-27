@@ -15,10 +15,11 @@ final class IssueListViewController: BaseViewController {
     // MARK: - UI
     
     private lazy var listTableView = UITableView().then {
-        $0.translatesAutoresizingMaskIntoConstraints = false
-        $0.delegate = self
-        $0.dataSource = self
         $0.register(IssueListCell.self)
+		$0.delegate = self
+		$0.dataSource = self
+		$0.rowHeight = UITableView.automaticDimension
+		$0.estimatedRowHeight = 44.0
     }
     
     private var list: [Issue] = []

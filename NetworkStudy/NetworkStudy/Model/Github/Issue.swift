@@ -25,9 +25,9 @@ struct Issue: Decodable {
 //    let labels: [String]?
     let state: String?
     let locked: Bool?
-    let assignee: String?
+//    let assignee: String?
 //    let assignees: [String]?
-    let milestone: String?
+//    let milestone: String?
     let comments: Int?
     let createdAt: String?
     let updatedAt: String?
@@ -42,7 +42,7 @@ struct Issue: Decodable {
     let performedViaGithubApp: String?
     
     enum CodingKeys: String, CodingKey {
-        case url, id, number, title, user, state, locked, assignee, milestone, comments, draft, body, reactions, logoUrl, homepageUrl, empty
+        case url, id, number, title, user, state, locked, comments, draft, body, reactions, logoUrl, homepageUrl, empty
         case repositoryUrl = "repository_url"
         case labelsUrl = "labels_url"
         case commentsUrl = "comments_url"

@@ -14,7 +14,7 @@ import Foundation
 
 enum GithubAPI {
 	case getRepository(String, String)
-    case issues(String, String)
+    case issues(String, String, Int)
 }
 
 extension GithubAPI {
@@ -24,8 +24,8 @@ extension GithubAPI {
         switch self {
 		case .getRepository(let owner, let repo):
 			return GithubAPI.baseURL + "/repos/\(owner)/\(repo)"
-        case .issues(let owner, let repo):
-            return GithubAPI.baseURL + "/repos/\(owner)/\(repo)/issues"
+        case .issues(let owner, let repo, let page):
+            return GithubAPI.baseURL + "/repos/\(owner)/\(repo)/issues?page=\(page)&per_page=30"
         }
     }
     

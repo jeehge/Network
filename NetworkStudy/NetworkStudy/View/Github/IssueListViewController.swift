@@ -56,7 +56,7 @@ final class IssueListViewController: BaseViewController {
     }
     
     private func getIssues(owner: String = "apple", repo: String = "swift") {
-        IssuesService().getIssues(api: .issues(owner, repo)) { [weak self] (result: Result<[Issue], APIError>) in
+        IssuesService().getIssues(api: .issues(owner, repo, 1)) { [weak self] (result: Result<[Issue], APIError>) in
             guard let self = self else { return }
             switch result {
             case .success(let result):
@@ -112,7 +112,8 @@ final class IssueListViewController: BaseViewController {
 // MARK: - UITableViewDataSource
 extension IssueListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        print(list.count)
+		return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

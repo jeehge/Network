@@ -124,14 +124,10 @@ extension IssueListViewController: UITableViewDataSource {
 
 // MARK: - UITableViewDelegate
 extension IssueListViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 55
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let detailVC = IssueDetailViewController.viewController(from: .issueList)
-//        detailVC.issue = list[indexPath.row]
-//        navigationController?.pushViewController(detailVC, animated: true)
+        let detailVC = IssueDetailViewController.viewController(from: .github)
+        detailVC.issue = list[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {

@@ -11,6 +11,7 @@
 		E936BD62288E768000348CDB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = E936BD61288E768000348CDB /* SnapKit */; };
 		E936BD65288E769900348CDB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E936BD64288E769900348CDB /* Then */; };
 		E936BD68288E76C600348CDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E936BD67288E76C600348CDB /* Alamofire */; };
+		E946911028928A8400A7D0DD /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E946910F28928A8400A7D0DD /* IssueDetailViewController.swift */; };
 		E953C3E127C13AE200795DF3 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953C3E027C13AE200795DF3 /* UITableViewCell+Extension.swift */; };
 		E961400027983BA100726FDB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9613FFF27983BA100726FDB /* BaseViewController.swift */; };
 		E9614002279A7AD700726FDB /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9614001279A7AD700726FDB /* IssueListViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E946910F28928A8400A7D0DD /* IssueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
 		E953C3E027C13AE200795DF3 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		E9613FFF27983BA100726FDB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9614001279A7AD700726FDB /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			children = (
 				E9D892CD279A7CFE002B05B1 /* Issue */,
 				E9614001279A7AD700726FDB /* IssueListViewController.swift */,
+				E946910F28928A8400A7D0DD /* IssueDetailViewController.swift */,
 				E9A7142527DD77AC0062A6C7 /* Github.storyboard */,
 			);
 			path = Github;
@@ -373,6 +376,7 @@
 			files = (
 				E9B6061C278837F6006BEDFB /* User.swift in Sources */,
 				E9772CCA2791A98C0085606D /* GoogleAPI.swift in Sources */,
+				E946911028928A8400A7D0DD /* IssueDetailViewController.swift in Sources */,
 				E9B6061727883794006BEDFB /* API.swift in Sources */,
 				E9D892DA279A7EC3002B05B1 /* URL+Extension.swift in Sources */,
 				E9D892D6279A7E4B002B05B1 /* IssuesService.swift in Sources */,

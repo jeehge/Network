@@ -14,6 +14,7 @@ final class IssueListCell: UITableViewCell {
     
     private let titleLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16)
+		$0.numberOfLines = 2
     }
     
     private let logoImageView = UIImageView().then {
@@ -45,12 +46,8 @@ final class IssueListCell: UITableViewCell {
         contentView.addSubviews(titleLabel, logoImageView)
         
         titleLabel.snp.makeConstraints {
-            $0.top.bottom.equalTo(safeAreaLayoutGuide).inset(8)
-			$0.leading.trailing.equalTo(safeAreaLayoutGuide).inset(16)
-        }
-        
-        logoImageView.snp.makeConstraints {
-            $0.top.bottom.left.right.equalTo(safeAreaLayoutGuide).inset(4)
+            $0.top.bottom.equalToSuperview().inset(8)
+			$0.leading.trailing.equalToSuperview().inset(16)
         }
     }
     
@@ -64,10 +61,6 @@ final class IssueListCell: UITableViewCell {
         if let empty = info.empty {
             titleLabel.text = empty
             accessoryType = .none
-        } else if let logoUrl = info.logoUrl {
-            let url = URL(string: logoUrl)
-            logoImageView.kf.setImage(with: url)
-            logoImageView.isHidden = false
         } else {
             if let title = info.title,
                let number = info.number.map(String.init) {

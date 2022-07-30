@@ -47,7 +47,8 @@ final class IssueDetailViewController: BaseViewController {
 	private func configConstraint () {
 		view.addSubviews(userInfoView, issueTextView)
 		userInfoView.snp.makeConstraints {
-			$0.top.leading.trailing.equalToSuperview()
+			$0.top.equalTo(view.layoutMarginsGuide)
+			$0.leading.trailing.equalToSuperview()
 			$0.height.equalTo(80)
 		}
 		
@@ -66,7 +67,7 @@ final class IssueDetailViewController: BaseViewController {
 		
 		userNameLabel.snp.makeConstraints {
 			$0.centerY.equalToSuperview()
-			$0.leading.equalTo(userImageView.snp.right).offset(16)
+			$0.leading.equalTo(userImageView.snp.trailing).offset(16)
 			$0.trailing.equalTo(userInfoView).inset(32)
 		}
 	}

@@ -12,20 +12,24 @@ import Foundation
 */
 
 enum GoogleAPI {
-    case image(String, String)
+    case image(String)
 }
 
 extension GoogleAPI {
     static let baseURL = "https://www.googleapis.com"
     
-    private var apikey: String {
-        "AIzaSyBUPKhaeVlOHBZ98OIhWoGicdXeLTgqcG8"
-    }
-    
+	private var apikey: String {
+		"AIzaSyBUPKhaeVlOHBZ98OIhWoGicdXeLTgqcG8"
+	}
+	
+	private var engineID: String {
+		"d0857c8964bf99e76"
+	}
+	
     var path: String {
         switch self {
             // 검색엔진ID, 키워드
-        case .image(let engineID, let keyword):
+        case .image(let keyword):
             return GithubAPI.baseURL + "/customsearch/v1?key=\(apikey)&cx=\(engineID)&q=\(keyword)"
         }
     }
@@ -37,6 +41,3 @@ extension GoogleAPI {
         }
     }
 }
-
-
-//

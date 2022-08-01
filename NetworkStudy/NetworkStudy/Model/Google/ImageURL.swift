@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct ImageURL: Decodable {
+	let type: String?
+	let template: String?
+}
+

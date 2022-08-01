@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Queries: Decodable {
+	let request: [GoogleImage]?
+}

@@ -400,6 +400,20 @@ track을 탭하면 다음과 같이 AVPlayerViewController에서 재생된다.
 
 먼저 사용자가 활성 다운로드를 취소할 수 있도록 허용합니다.
 
+<br>
 
-Canceling Downloads
+다운로드 취소
 
+```
+guard let download = activeDownloads[track.previewURL] else {
+  return
+}
+
+download.task?.cancel()
+activeDownloads[track.previewURL] = nil
+```
+
+다운로드를 취소하려면 활성 다운로드 사전의 해당 다운로드에서 다운로드 작업을 검색하고 cancel()을 호출하여 작업을 취소합니다.
+
+
+Pausing Downloads

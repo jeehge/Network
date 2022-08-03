@@ -16,7 +16,7 @@ enum GoogleAPI {
 }
 
 extension GoogleAPI {
-    static let baseURL = "https://www.googleapis.com"
+    static let baseURL = "https://customsearch.googleapis.com"
     
 	private var apikey: String {
 		"AIzaSyBUPKhaeVlOHBZ98OIhWoGicdXeLTgqcG8"
@@ -30,7 +30,7 @@ extension GoogleAPI {
         switch self {
             // 검색엔진ID, 키워드
         case .image(let keyword):
-            return GithubAPI.baseURL + "/customsearch/v1?key=\(apikey)&cx=\(engineID)&q=\(keyword)"
+            return GoogleAPI.baseURL + "/customsearch/v1?key=\(apikey)&cx=\(engineID)&q=\(keyword)"
         }
     }
     

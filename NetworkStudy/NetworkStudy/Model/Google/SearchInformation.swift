@@ -8,7 +8,7 @@
 import Foundation
 
 struct SearchInformation: Decodable {
-	let searchTime: Float?
+	let searchTime: Double?
 	let formattedSearchTime: String?
 	let totalResults: String?
 	let formattedTotalResults: String?

@@ -12,6 +12,8 @@
 		E936BD65288E769900348CDB /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = E936BD64288E769900348CDB /* Then */; };
 		E936BD68288E76C600348CDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E936BD67288E76C600348CDB /* Alamofire */; };
 		E946911028928A8400A7D0DD /* IssueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E946910F28928A8400A7D0DD /* IssueDetailViewController.swift */; };
+		E946D73E289D4D9B008A0A80 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E946D73D289D4D9A008A0A80 /* NavigationView.swift */; };
+		E946D741289D4E18008A0A80 /* ImagePageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E946D740289D4E18008A0A80 /* ImagePageCell.swift */; };
 		E953C3E127C13AE200795DF3 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E953C3E027C13AE200795DF3 /* UITableViewCell+Extension.swift */; };
 		E961400027983BA100726FDB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9613FFF27983BA100726FDB /* BaseViewController.swift */; };
 		E9614002279A7AD700726FDB /* IssueListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9614001279A7AD700726FDB /* IssueListViewController.swift */; };
@@ -42,6 +44,7 @@
 		E9E26B652894F36300085A93 /* Queries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E26B642894F36300085A93 /* Queries.swift */; };
 		E9E26B672894F39F00085A93 /* GoogleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E26B662894F39F00085A93 /* GoogleImage.swift */; };
 		E9E26B692894F44000085A93 /* SearchInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E26B682894F44000085A93 /* SearchInformation.swift */; };
+		E9E26B6C289A96F300085A93 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E26B6B289A96F300085A93 /* ImageViewerViewController.swift */; };
 		E9F4E87D272853950089ED10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87C272853950089ED10 /* AppDelegate.swift */; };
 		E9F4E87F272853950089ED10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E87E272853950089ED10 /* SceneDelegate.swift */; };
 		E9F4E881272853950089ED10 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F4E880272853950089ED10 /* MenuViewController.swift */; };
@@ -53,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		E946910F28928A8400A7D0DD /* IssueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueDetailViewController.swift; sourceTree = "<group>"; };
+		E946D73D289D4D9A008A0A80 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		E946D740289D4E18008A0A80 /* ImagePageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePageCell.swift; sourceTree = "<group>"; };
 		E953C3E027C13AE200795DF3 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		E9613FFF27983BA100726FDB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		E9614001279A7AD700726FDB /* IssueListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 		E9E26B642894F36300085A93 /* Queries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queries.swift; sourceTree = "<group>"; };
 		E9E26B662894F39F00085A93 /* GoogleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleImage.swift; sourceTree = "<group>"; };
 		E9E26B682894F44000085A93 /* SearchInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInformation.swift; sourceTree = "<group>"; };
+		E9E26B6B289A96F300085A93 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
 		E9F4E879272853950089ED10 /* NetworkStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F4E87C272853950089ED10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F4E87E272853950089ED10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +115,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E946D73F289D4E11008A0A80 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E946D740289D4E18008A0A80 /* ImagePageCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E9614003279A7ADA00726FDB /* Github */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E9613FFF27983BA100726FDB /* BaseViewController.swift */,
+				E946D73D289D4D9A008A0A80 /* NavigationView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -246,6 +261,7 @@
 		E9D892DD279CE679002B05B1 /* Google */ = {
 			isa = PBXGroup;
 			children = (
+				E9E26B6A289A96CF00085A93 /* ImageViewer */,
 				E9D892DE279CE68A002B05B1 /* ImageListViewController.swift */,
 				E9A7142227DD77990062A6C7 /* Google.storyboard */,
 			);
@@ -295,6 +311,15 @@
 				E9B60619278837EF006BEDFB /* Issue.swift */,
 			);
 			path = Issue;
+			sourceTree = "<group>";
+		};
+		E9E26B6A289A96CF00085A93 /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				E946D73F289D4E11008A0A80 /* Cell */,
+				E9E26B6B289A96F300085A93 /* ImageViewerViewController.swift */,
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 		E9F4E870272853950089ED10 = {
@@ -423,15 +448,18 @@
 				E9B6061727883794006BEDFB /* API.swift in Sources */,
 				E9D892DA279A7EC3002B05B1 /* URL+Extension.swift in Sources */,
 				E9D892D6279A7E4B002B05B1 /* IssuesService.swift in Sources */,
+				E946D73E289D4D9B008A0A80 /* NavigationView.swift in Sources */,
 				E9B6061E278837FE006BEDFB /* PullRequest.swift in Sources */,
 				E9D892DF279CE68A002B05B1 /* ImageListViewController.swift in Sources */,
 				E9F4E887272853950089ED10 /* NetworkStudy.xcdatamodeld in Sources */,
+				E9E26B6C289A96F300085A93 /* ImageViewerViewController.swift in Sources */,
 				E9B6060F27883559006BEDFB /* ReuseViewIdentifierable.swift in Sources */,
 				E961400027983BA100726FDB /* BaseViewController.swift in Sources */,
 				E9F4E881272853950089ED10 /* MenuViewController.swift in Sources */,
 				E9E26B672894F39F00085A93 /* GoogleImage.swift in Sources */,
 				E96FE8F227B15B0900356B38 /* MenuCellType.swift in Sources */,
 				E9E26B5C2894D2BD00085A93 /* ImageService.swift in Sources */,
+				E946D741289D4E18008A0A80 /* ImagePageCell.swift in Sources */,
 				E9B6061527883732006BEDFB /* GithubAPI.swift in Sources */,
 				E9E26B632894E03500085A93 /* ImageURL.swift in Sources */,
 				E9B6062027883804006BEDFB /* Reactions.swift in Sources */,
